@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agulay - Final Project</title>
+    <meta name="description" content="Personal website of Your Name." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Newsreader:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+</head>
+
+<body>
+    <div id="root">
+        <header class="bar">
+            <h1 class="brand">Dustin Martti D. Agulay - Finals Project</h1>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page">
+                <h1>Educational Background</h1>
+                <ol class="timeline">
+                    <li>
+                        <h3>Adamson University</h3>
+                        <p class="meta">BSIT · 1st Year</p>
+                        <p>Currently studying for a degree in Information Technology. I am still learning programming and web development.</p>
+                    </li>
+                    <li>
+                        <h3>STI College Las Pinas</h3>
+                        <p class="meta">ITMAWD · 2024 – 2026</p>
+                        <p>Did some basic programming and web development</p>
+                    </li>
+                    <li>
+                        <h3>Saint Alphonsus Liguori Integrated School</h3>
+                        <p class="meta">Grade School 2020 · 2024</p>
+                        <p>High School</p>
+                    </li>
+
+                </ol>
+            </section>
+        </main>
+
+
+        <footer id="contact">
+            <div class="contact-flex">
+                <h2>Contact</h2>
+                <p>This is my student email and GitHub account:</p>
+                <p><a class="mail"
+                        href="mailto:dustin.martti.agulay@adamson.edu.ph">dustin.martti.agulay@adamson.edu.ph</a>
+                </p>
+                <ul>
+                    <li><a href="https://github.com/DustinMarttiAgulay" target="_blank" rel="noreferrer">Github
+                            account</a>
+                    </li>
+                </ul>
+                <small>© 2026 Dustin Martti D. Agulay</small>
+            </div>
+
+            <div class="contact-flex">
+                <h2>Contact Form</h2>
+                <p>If you want to contact me, please fill out the form below:</p>
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="name" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">Reason for Contact</label>
+                        <select id="topic" name="topic" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
